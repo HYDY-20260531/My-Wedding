@@ -60,7 +60,7 @@
 }
 
 html {
-  font-size: 17px;
+  font-size: 16px;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
 }
@@ -647,12 +647,15 @@ a {
 
 .hero__names {
   font-family: var(--font-serif);
-  font-size: 1.875rem;
+  font-size: clamp(2rem, 7vw, 2.35rem);
   font-weight: 700;
-  letter-spacing: 8px;
-  margin-bottom: var(--spacing-md);
-  line-height: 1.4;
-  color: var(--color-text);
+  letter-spacing: 4px;
+  margin-bottom: 0.85rem;
+  line-height: 1.35;
+  color: #fffafc;
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.22),
+    0 1px 3px rgba(0, 0, 0, 0.16);
 }
 
 .hero__divider {
@@ -671,16 +674,17 @@ a {
 
 .hero__date,
 .hero__venue {
-  font-size: 1.05rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  opacity: 0.75;
-  line-height: 1.6;
-  color: var(--color-text-light);
+  font-size: clamp(0.98rem, 3.8vw, 1.08rem);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  opacity: 1;
+  line-height: 1.65;
+  color: #fff7fa;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.22);
 }
 
 .hero__venue {
-  margin-top: 0.25rem;
+  margin-top: 0.4rem;
 }
 
 /* ─── Countdown ─── */
@@ -693,12 +697,12 @@ a {
 }
 
 .countdown__label {
-  font-size: 0.75rem;
-  font-weight: 400;
-  letter-spacing: 3px;
-  opacity: 0.5;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  opacity: 1;
   margin-bottom: var(--spacing-sm);
-  color: var(--color-accent-dark);
+  color: #522E59;
 }
 
 .countdown__timer {
@@ -717,28 +721,29 @@ a {
 
 .countdown__number {
   font-family: var(--font-display);
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 2.15rem;
+  font-weight: 700;
   line-height: 1;
-  letter-spacing: 2px;
-  color: var(--color-accent-dark);
+  letter-spacing: 1px;
+  color: #522E59;
 }
 
 .countdown__unit {
-  font-size: 0.625rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  opacity: 0.5;
-  margin-top: 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 1;
+  margin-top: 0.3rem;
+  color: #522E59;
 }
 
-.countdown__sep {
+countdown__sep {
   font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 300;
-  opacity: 0.3;
-  margin-top: -1rem;
-  color: var(--color-accent);
+  font-size: 1.6rem;
+  font-weight: 700;
+  opacity: 0.9;
+  margin-top: -0.9rem;
+  color: #522E59;
 }
 
 /* ═══════════════════════════════════════════
